@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR & LET</title>
+    <script>
+        //3 escpopos de variáveis: global, função e bloco
+
+        let series = "Friends"; //escopo global
+
+        {
+            let series = "The Big Bang Theory"; //escopo de bloco
+            //document.getElementById("output").innerHTML += series + "<br>";
+            console.log("Dentro do bloco" + series);
+        }
+
+        console.log("Fora do bloco: " + series);
+        //document.getElementById("output").innerHTML += series + "<br>";
+
+    </script>
+    </head>
+
+<body>
+    <div id="output"></div>
+</body>
+</html>
