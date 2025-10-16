@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorias de Notação</title>
+    <script>
+        
+        let nome = "João"; 
+        let idade = 20;
+        let sexo = "Masculino";
+        let profissao = "Desenvolvedor";
+        // ou poderia recuperar os dados de um formulário html, utlizando document.getElementById("idDoInput").value
+        
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+
+            exibirResumo: function(){
+                console.log(`${this.nome}, ${this.idade} anos, é ${this.sexo}, ${this.profissao}`);
+            }
+        }
+
+        console.log(objeto)
+        objeto.exibirResumo()
+
+        //--------------------------------------------------
+
+        let objeto2 = {
+            nome, //nome = nome variável / valor = valor da variável
+            idade,
+            sexo,
+            profissao,
+
+            exibirResumo(){
+                console.log(`${this.nome}, ${this.idade} anos, é ${this.sexo}, ${this.profissao}`);
+            }
+        }
+        console.log(objeto2)
+        objeto2.exibirResumo()
+
+    </script>
+    </head>
+
+<body>
+    <div id="output"></div>
+
+    
+</body>
+</html>
