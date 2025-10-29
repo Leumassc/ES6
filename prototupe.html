@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <script>
+        /*
+
+        //Avião
+        //atributos: cor e modelo; método: levantarVoo
+
+        //objeto literal
+        let a1 = {
+            cor: "Branco",
+            modelo: "Airbus A320",
+            lavantarVoo: function(){
+                console.log('Avião Levanta Voo');
+            }
+        }
+
+        //função construtora
+        let AviaoF = function(){
+            this.cor = "azul"
+            this.modelo = "Boeing 737"
+            this.levantarVoo = function(){
+                console.log('Avião Levanta Voo - função construtora');
+            }
+        }
+
+        let a2 = new AviaoF()
+
+        //classe
+
+        class AviaoC{
+            constructor(){
+                this.cor = "Vermelho"
+                this.modelo = "Embraer E195"
+
+            }
+            levantarVoo(){
+                console.log('Avião Levanta Voo - classe');
+            }
+        }
+
+        let a3 = new AviaoC()
+
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+
+*/
+
+        //----------------------------------------------------------
+
+        //HERANÇA DE PROTOTYPE
+
+        Object.prototype.atributo50 = 'valor50' //evitar usar
+
+        let animal = {
+            atributo1: 'valor1',
+        }
+        
+        let vertebrado = { __proto__: animal,
+            atributo2: 'valor2',
+        }
+
+        let ave = { __proto__: vertebrado,
+            atributo3: 'valor3', atributo2: 'x'
+        }
+
+        console.log(ave.atributo2, ave.atributo1, ave.atributo3, ave.atributo50);
+    </script>
+    </head>
+
+<body>
+    <div id="output"></div>
+
+    
+</body>
+</html>
