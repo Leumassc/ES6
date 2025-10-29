@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+
+    <script>
+
+        /*
+
+        // Destructuring é uma expressão do JavaScript que possibilita extrair dados de arrays ou objetos em variáveis distintas.
+
+        // Exemplo com Array
+        let frutas = ["Maçã", "Banana", "Laranja", "Uva"];
+
+       // let [a, b, , c] = frutas;
+        let [a, b, c, d, e = "acerola" ] = frutas;
+
+        //console.log(a, b, c, d, e)
+
+        let coisas = [
+            ["Maçã", "Banana", "Laranja", "Uva"],
+            ['Samuel', 'Joyce']
+        ]
+
+        let [[,,n2]] = coisas;
+        console.log(n2);
+
+        */
+
+        //-----------------------------------------------------------------------------
+
+        // Exemplo com Objeto
+
+        /*
+        let produto = {
+            descricao: "Camiseta",
+            preco: 29.90,
+            detalhes:{
+                fabricante: 'Adidas',
+                cor: 'Azul'
+            }
+        }
+
+        //let {descricao, preco} = produto;
+
+        //let {descricao: a, preco: b} = produto;
+
+        //let {descricao: a, preco: b, desconto = 5} = produto;
+
+        let {detalhes: {fabricante, cor}} = produto
+        console.log(fabricante, cor)
+        */
+
+        //-------------------------------------------------------------------------------
+
+        // Exemplo com Função
+/*
+        let array = [10, 20, 30, 40];
+
+        function test([a, b, , c, d=50]){
+            console.log(a, b, c, d)
+        }
+
+        test(array);
+        */
+
+        //objeto
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({a, d}){
+            console.log(a, d)
+        }
+
+        teste(obj);
+
+    </script>
+
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
