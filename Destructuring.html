@@ -81,6 +81,50 @@
 
         teste(obj);
 
+
+        ---------------------------------------------------------------------------------------------------------
+            <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring </title>
+    <script>
+        
+        //Array Destructuring
+/*
+        let array = [10, 20, 30, 40, 50];
+
+        let [a, ...resto] = array
+
+        console.log(a)
+        console.log(resto)
+        */
+
+        //Objeto Destructuring
+        let obj = {
+            a:10,
+            b:20,
+            c:30,
+            d:40
+
+        }
+
+        let {a, ...resto} = obj
+        console.log(a)
+        console.log(resto)
+       
+
+    </script>
+    </head>
+
+<body>
+    <div id="output"></div>
+
+    
+</body>
+</html>
+
     </script>
 
     </head>
@@ -88,4 +132,5 @@
     <body>
         <div id="output"></div>
     </body>
+
 </html>
